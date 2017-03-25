@@ -1,16 +1,25 @@
-header {
-   height: 50px;
-   border-bottom: 1px solid gray;
-   background-color: #4b4343;
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
 }
 
-header h1 {
-   font-size: 1.5em;
+header{
+	background: #00795f;
+	width: 100%;
+	padding: 15px 0;
+	color: #fff;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+header  {
+/*   font-size: 1.5em;
    font-weight: bold;
    margin-left: 50px;
    line-height: 50px;
-   margin-top: 0;
-   text-align: center;
+   margin-top: 0;*/
+   
 }
 span{
 	color:blue;
@@ -36,9 +45,10 @@ span{
     	
     	list-style-type: none;
     	
-    }
-.ultop li{
+    }*/
+       li{
 	
    float: right;
-   margin-left: 30px;*/
+   margin-left: 30px;
+}
 
