@@ -46,24 +46,34 @@
                  </div>
 
                   <div class="row">
-                        <div class="col-lg-12 col-xs-5 bg-danger">
+                        <div class="col-lg-12 col-xs-5 ">
 
 
                         <nav>
 						<ul class="nav nav-tabs">
-							  <li role="presentation" ><a href="#">HOME</a></li>
-							  <li role="presentation"><a href="#">NEW VEHICLES</a></li>
+						<li role="presentation"><a href="#">HOME</a></li>
+							<li class="dropdown">
+				              <a href="#" class="dropdown-toggle" data-toggle="dropdown">NEW VEHICLES <b class="caret"></b></a>
+				              <ul class="dropdown-menu">
+				                <li><a href="#">Mercedes-Benz Collection</a></li>
+				                <li><a href="#">Smart Collection</a></li>
+				                <li><a href="#">Sprinter Collection</a></li>
+				                <li><a href="#">Diplomatic Sales Information</a></li>
+				              </ul>
+				            </li>
 							  <li role="presentation"><a href="#">PRE-OWNED VEHICLES</a></li>
 							  <li role="presentation"><a href="#">SPECIAL OFFERS</a></li>
 							  <li role="presentation"><a href="#">PARTS AND SERVICES</a></li>
 							   <li role="presentation"><a href="#">CONTACT</a></li>
-							   
+
 							   <li><form class="navbar-form navbar-left">
 							        <div class="form-group">
 							          <input type="text" class="form-control" placeholder="Search">
 							        </div>
-							   </form>
+							       </form>
 							   </li>
+
+							   
 						</ul>
 					</nav>
                             
@@ -95,5 +105,22 @@
 			  crossorigin="anonymous"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+  $('.nav-tabs li').hover(function(){
+    $(this).css('border-bottom', 'solid 6px blue');
+  },
+  function(){
+      $(this).css('border-bottom', 'none');
+  });
+
+
+
+	$('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+</script>
 </body>
 </html>

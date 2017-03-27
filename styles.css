@@ -68,3 +68,16 @@ span{
   /* margin-left: 30px;*/
 }
 
+.dropdown-menu li{
+	padding:8px;
+}
+
+.caret{
+	border-top: none;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    background-color: white;
+    border: none;
+}
+
