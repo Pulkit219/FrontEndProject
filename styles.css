@@ -81,3 +81,18 @@ span{
     border: none;
 }
 
+.active{
+	border-bottom: solid 6px blue;
+	
+}
+.activeColor{
+	color: red;
+}
+
+
+
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+{
+	border: none;
+}
