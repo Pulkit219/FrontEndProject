@@ -7,50 +7,18 @@ p{
 	margin: 0.3%;
 }
 
-.container-fluid{
+div#topbar.container-fluid{
 
 	/*background: #00795f;*/
 	/*width: 100%;*/
 	/*padding: 15px 0;*/
-	background-color: 	red;
+	background-color: #413c45;
 	
 	/*text-align: center;*/
 	/*font-size: 1.5em;*/
 }
 
 
-}
-/*header{
-	background: #00795f;
-	width: 100%;
-	padding: 15px 0;
-	color: #fff;
-	text-align: center;
-	font-size: 1.5em;
-}
-*/
-header  {
-/*   font-size: 1.5em;
-   font-weight: bold;
-   margin-left: 50px;
-   line-height: 50px;
-   margin-top: 0;*/
-   
-}
-span{
-	color:blue;
-}
-
-.nav {
-/*    padding-left: 20%;
-    padding-top: 140px;*/
-    }
-
-
-/*    .glyphicon {
-    	color: white;
-    padding-right: 10px;
-}*/
 
 
 .nav-tabs {
@@ -85,10 +53,7 @@ span{
 	border-bottom: solid 6px blue;
 	
 }
-/*.activeColor{
-	color: red;
-}
-*/
+
 
 
 
@@ -97,3 +62,33 @@ span{
 	border: none;
 }
 
+
+
+div.item.active img{
+    height:auto;
+}
+div.col-lg-3 img{
+width: 100%
+}
+	
+
+
+}
+
+div.col-lg-3{
+	
+	   width: auto;
+
+}
+input.form-control{
+background: rgba(128, 128, 128, 0.06);
+	}
+
+
+span{
+	color:rgba(0, 184, 255, 0.79) ;
+	font-weight: bold;
+}
+p {
+	color: white;
+}
