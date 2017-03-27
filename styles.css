@@ -9,13 +9,7 @@ p{
 
 div#topbar.container-fluid{
 
-	/*background: #00795f;*/
-	/*width: 100%;*/
-	/*padding: 15px 0;*/
-	background-color: #413c45;
-	
-	/*text-align: center;*/
-	/*font-size: 1.5em;*/
+	background-color: #413c45;	
 }
 
 
@@ -25,16 +19,8 @@ div#topbar.container-fluid{
     border-bottom: 0;
     }
 
- /*   .ultop{
-    	
-    	list-style-type: none;
-    	
-    }*/
-       li{
-	
-  /* float: right;*/
-  /* margin-left: 30px;*/
-}
+
+
 
 .dropdown-menu li{
 	padding:8px;
