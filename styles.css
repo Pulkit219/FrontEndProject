@@ -81,14 +81,14 @@ span{
     border: none;
 }
 
-.active{
+.active1{
 	border-bottom: solid 6px blue;
 	
 }
-.activeColor{
+/*.activeColor{
 	color: red;
 }
-
+*/
 
 
 
@@ -96,3 +96,4 @@ span{
 {
 	border: none;
 }
+

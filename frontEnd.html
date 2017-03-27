@@ -91,13 +91,19 @@
 
 </div>
 
-<div class="container bg-danger">
+<div class="container">
 	<div class="row">
 		<div class="col-sm-12 ">
-			<div class="carousel" id="myslider" data-ride="">
+			<div class="carousel slide" id="myslider" data-ride="">
+			  <ol class="carousel-indicators">
+			     <li data-target="#myslider" data-slide-to="0" class="active"></li>
+			     <li data-target="#myslider" data-slide-to="1"></li>
+			     <li data-target="#myslider" data-slide-to="2"></li>
+			  	
+			  </ol>
                  <div class="carousel-inner">
 					<div class="item active">
-						<img src="img/header-img-1.png" alt="cars">
+						<img  src="img/header-img-1.png" alt="cars">
 					</div>
 					<div class="item ">
 						<img src="img/header-img-2.png" alt="cars">
@@ -106,8 +112,11 @@
 						<img src="img/header-img-3.png" alt="cars">
 					</div>
 				 </div>
-				 <a class ="right carousel-control" href="myslider" data-slide="next">
-				 	<img src="img/ico-arrow-right.png" alt="cars">
+				 <a class ="right carousel-control" href="#myslider" data-slide="next">
+				 	<img  src="img/ico-arrow-right.png" alt="cars">
+				 </a>
+				 <a class ="left carousel-control" href="#myslider" data-slide="prev">
+				 	<img class="img-responsive" src="img/ico-arrow-left.png" alt="cars">
 				 </a>
 			</div>
 		</div>
@@ -129,11 +138,14 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+
 <script type="text/javascript">
+
+$(document).ready(function() {
   $('.nav-tabs li').click(function(){
-  	$(this).addClass("active");
+  	$(this).addClass("active1");
   	// $(this).children().addClass("activeColor");
-  	$(this).siblings().toggleClass('active',false);
+  	$(this).siblings().toggleClass('active1',false);
   	// $(this).children().siblings().toggleClass("activeColor",false);
   });
 
@@ -144,6 +156,20 @@
 }, function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 });
+
+$(".carousel").carousel({
+	interval:500,
+	pause:false,
+	wrap:false,
+	keyboard:true
+});
+
+    
+});
+
+
 </script>
+
+
 </body>
 </html>
