@@ -53,6 +53,9 @@ div#topbar.container-fluid{
 	border-bottom: solid 6px blue;
 	
 }
+.active2{
+	color: red !important;
+}
 
 
 
@@ -92,3 +95,20 @@ span{
 p {
 	color: white;
 }
+
+
+input.form-control{
+    background-image: url(img/ico-loupe.png);
+    background-position: 170px 7px;
+    background-repeat: no-repeat;
+}
+
+ul.list-unstyled.list-inline.text-center li a{
+	color: #33b1b7;
+}
+
+ul.nav.nav-tabs li a {
+	color: black;
+	font-weight: bold;
+}
+

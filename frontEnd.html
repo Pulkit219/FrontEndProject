@@ -21,18 +21,18 @@
 <body>
 
 		<div class="container-fluid text-center" id="topbar">
-            <p><span><img src="img/ico-phone.png"></span><span>SALES</span> 1 800 880 00 00 | <span>SERVICES</span> 1 800 008 0088</p>
+            <p><span><img src="img/ico-phone.png"></span><span class="spantext">SALES</span> 1 800 880 00 00 | <span class="spantext">SERVICES</span> 1 800 008 0088</p>
         </div>
 
 
 <div>
 	 <div class ="container">
 			     <div class="row">
-                        <div class="col-lg-6 col-sm-6 bg-success">
+                        <div class="col-lg-6 col-sm-6 ">
                             <img src="img/logo.png">
 				     	</div>
 
-				     	<div class="col-lg-6 col-sm-6 bg-danger">
+				     	<div class="col-lg-6 col-sm-6 ">
 				            <nav>
 								<ul class=" list-unstyled list-inline text-center">
 									<li><a href="#">About</a></li>
@@ -46,7 +46,7 @@
                  </div>
 
                   <div class="row">
-                        <div class="col-lg-12 col-xs-5 ">
+                       <div class="col-lg-12 col-xs-5 bg-danger">
 
 
                         <nav>
@@ -170,9 +170,10 @@ Aenean non scelerisque velit. Pellentesque eget turpis libero. Maecenas at variu
 $(document).ready(function() {
   $('.nav-tabs li').click(function(){
   	$(this).addClass("active1");
-  	// $(this).children().addClass("activeColor");
   	$(this).siblings().toggleClass('active1',false);
-  	// $(this).children().siblings().toggleClass("activeColor",false);
+  	// $(this).find('a').addClass('active2');
+  	// $(this).find('a').siblings().toggleClass('active2', false);
+  
   });
 
 
