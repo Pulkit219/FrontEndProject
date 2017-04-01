@@ -10,9 +10,43 @@
 <meta name="viewport" content="width = device-width, initial-scale = 1">
 	<title>About Me</title>
 <link rel="stylesheet" type="text/css" href="blueberry.css">
-<style type="text/css"></style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<style type="text/css">
+* {
+margin: 0;
+border: 0;
+padding: 0;
+}
+body{
+   background:#f0f0f0;
+   font: 14px/20px Arial, San-Serif;
+   color: #555;
+   margin: 0;
+}
+h1{
+   text-align: center;
+   font-size: 180%;
+   line-height: 120%;
+   padding: 5% 0;
+}
+h2{
+   text-decoration: underline;
+   line-height: 280%;
+   padding-left: 2%;
+}
+   
+</style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script src="jquery.blueberry.js"></script>
+<script>
+$(window).load(function(){
+   $('blueberry').blueberry();
+   
+});
+</script>
+
 
 </head>
 <body>
