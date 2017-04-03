@@ -22,5 +22,51 @@ h3{
 	font-size: 175%;
 	line-height: 155%;
 	padding: 5% 0;
+	font-weight: 400;
 
+}
+p{
+	font-size: 160%;
+	line-height: 150%;
+	padding: 3%;
+	text-indent: 2%
+	text-align:justify;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	margin-bottom: -4px;
+}
+
+header{
+	background-color: #6991AC;
+	width: 100%;
+	height: 86px;
+}
+
+#header-inner{
+max-width: 1200px;
+margin:0 auto;
+}
+
+#logo{
+	margin: 20px;
+	float: left;
+	width:200px;
+	height: 60px;
+	background: url(img/RD.png) no-repeat center;
+
+}
+/*----nav bar starting-------*/
+
+nav{
+	float: right;
+	padding: 25px 20px 0 0;
+}
+#menu-icon{
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: url(img/nav.png) center;
 }
