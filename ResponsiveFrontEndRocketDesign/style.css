@@ -110,3 +110,12 @@ nav ul li a:hover{
 	max-width: 1100px;
 	margin: 0 auto;
 }
+
+.one-fourth{
+	width: 25%;
+	float:left;
+  text-align: center;
+}
+#html{
+	background-color: #F1AA90;
+}
