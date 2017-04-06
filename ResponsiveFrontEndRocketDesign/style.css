@@ -123,5 +123,25 @@ nav ul li a:hover{
 	background-color: #BEB9AD;
 }
 #seo{
-	
+	background-color: #AADCD2;
+}
+#social{
+	background-color: #A2B2C1;
+}
+
+.one-fourth i{
+	color: #F0F0F0;
+	font-size: 500%;
+	padding: 13% 0 4% 0;
+}
+.inner-wrapper{
+	float: left;
+	width: 100%;
+	background-color: #C3D7DF
+}
+article {
+	float: left;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
 }
