@@ -26,6 +26,8 @@ h3{
 
 }
 p{
+	font-family: 'Alegreya	Sans', sans-serif;
+	color: #F5F5F5;
 	font-size: 160%;
 	line-height: 150%;
 	padding: 3%;
@@ -148,4 +150,12 @@ article {
 
 #tablet{
 	background-color: #C3D7DF;
+}
+
+aside{
+	float: right;
+	margin:0 auto;
+	width: 50%;
+	height: auto;
+	
 }
