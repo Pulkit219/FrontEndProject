@@ -163,3 +163,22 @@ aside{
 #tablet2{
 	background-color: #A2B1C1;
 }
+
+#desktop{
+	background-color: #F1AA90;	
+}
+.inner-wrapper-2{
+	float: left;
+	width: 100%;
+	background-color: #C3D7DF;
+}
+.inner-wrapper-3{
+	float: left;
+	width: 100%;
+	background-color: #AADCD2;
+}
+
+.one-third{
+
+}
+
