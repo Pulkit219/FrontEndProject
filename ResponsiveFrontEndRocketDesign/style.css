@@ -17,13 +17,14 @@ h2{
 	font-weight: 700;
 	text-align: center;
 	padding-top: 2%;
+	color: #F5F5F5;
 }
 h3{
 	font-size: 175%;
 	line-height: 155%;
 	padding: 5% 0;
 	font-weight: 400;
-
+    color: #F5F5F5;
 }
 p{
 	font-family: 'Alegreya	Sans', sans-serif;
