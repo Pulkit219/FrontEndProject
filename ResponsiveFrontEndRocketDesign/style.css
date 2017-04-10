@@ -179,6 +179,8 @@ aside{
 }
 
 .one-third{
+width: 33.333333%;
+float: left;
 
 }
 
