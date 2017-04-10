@@ -181,6 +181,20 @@ aside{
 .one-third{
 width: 33.333333%;
 float: left;
-
+text-align: center;
 }
 
+#google {
+	background-color: #A2B1C1;
+}
+#marketing{
+	background-color: #BEB9AD;
+}
+#customers{
+	background-color: #AADCD2;
+}
+#smiley{
+	background-color: #AADCD2;
+	padding: 0 0 1%;
+	clear: both;
+}
