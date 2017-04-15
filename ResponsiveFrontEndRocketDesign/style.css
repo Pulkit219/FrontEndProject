@@ -224,3 +224,7 @@ footer{
 .social i:hover {
 	color: #F5F5F5;
 }
+footer.second {
+	border-top: 1px solid #AADCD2;
+	background-color: #544B59;
+}
