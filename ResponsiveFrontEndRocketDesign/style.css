@@ -208,8 +208,19 @@ footer{
 .social{
 	list-style-type: none;
 	text-align: center;
+/*	padding: 4%;*/
 }
 .social li{
 	display: inline;
-	
+	/*padding: 5%;*/
+	}
+
+.social i {
+	font-size: 460%;
+	margin: 1%
+	padding:5% 5% 5% 4%;
+	color: #C3D7DF;
+}
+.social i:hover {
+	color: #F5F5F5;
 }
