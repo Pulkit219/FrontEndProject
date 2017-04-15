@@ -198,3 +198,18 @@ text-align: center;
 	padding: 0 0 1%;
 	clear: both;
 }
+
+/*-----Start Footer---*/
+footer{
+	background-color: #6991AC;
+	width: 100%;
+}
+
+.social{
+	list-style-type: none;
+	text-align: center;
+}
+.social li{
+	display: inline;
+	
+}
