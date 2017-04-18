@@ -253,6 +253,10 @@ header{
 }
 
 #logo {
-	margin: 15px 0 20 -25px;
+	margin: 15px 0 20px -25px;
+background: url(img/RD_mobile.png) no-repeat center;
+
 }
+
+
 }
