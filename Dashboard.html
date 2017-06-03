@@ -20,16 +20,16 @@
 
 <style type="text/css">
 /* Fixed navbar */
-body {
+/*body {
     padding-top: 90px;
 }
 /* General sizing */
-ul.dropdown-lr {
+/*ul.dropdown-lr {
   width: 300px;
 }
 
 /* mobile fix */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
 	.dropdown-lr h3 {
 		color: #eee;
 	}
@@ -39,13 +39,7 @@ ul.dropdown-lr {
 }
 
 
-img{
 
-	width: 30%;
-float: left;
-margin:1.66%;
-
-}
 p{
 font-family: 'Indie Flower', cursive;
 font-size: 30px;
@@ -62,8 +56,23 @@ a.navbar-brand
 	font-size: x-large;
 	font-weight: 600;
 
+}*/
+
+img{
+
+	width: 30%;
+float: left;
+margin:1.66%;
+
 }
-  
+
+#main{
+margin-top: 8%;
+}
+
+#squareBox{
+	border: 1.5px solid black;
+}
 </style>
 
 
@@ -146,9 +155,47 @@ a.navbar-brand
 		</div>
 	</nav>
     
-<div class="container bg-danger">
+<div class="container bg-danger" id="main">
     <div class="row">
-        <div class="col-xs-12 text-center"> 
+        <div class="col-lg-4 col-md-6 img-responsive"> 
+        <img src="https://s-media-cache-ak0.pinimg.com/736x/47/e4/b8/47e4b823589a2940af578dc27b6a0ce1.jpg">
+         </div>
+         <div class="col-lg-8 col-md-6">
+	          <div id="squareBox">
+	          	<div class="row">
+	          	    <div class="col-lg-2 col-md-6">
+		          		<b>Market </b>
+		          	</div>
+		          	<div class="col-lg-10 col-md-6">	
+                      <p>Fill in who are your customers?</p> 
+                       
+		          	</div>	
+		          	
+	          	</div>
+	          	<div class="row">
+	          	    <div class="col-lg-2 col-md-6">
+		          		<b> Pain</b>
+		          	</div>
+		          	<div class="col-lg-10 col-md-6">	
+                       <p>WHat is the pain statement that you are trying to solve for them?</p>
+                       
+		          	</div>	
+		          	
+	          	</div>
+	          	 <div class="row">
+	          	    <div class="col-lg-2 col-md-6">
+		          		<b>Benefit</b>
+		          	</div>
+		          	<div class="col-lg-7 col-md-6">	
+                       
+                       <p>WHat is the benefit that will match that pain statement?</p>
+		          	</div>	
+		          	<div class="col-lg-3">
+		          		<button class="btn btn-success">Edit Profile</button>
+		          	</div>
+		          	
+	          	</div>
+	          </div>
          </div>
     </div>
 </div>
