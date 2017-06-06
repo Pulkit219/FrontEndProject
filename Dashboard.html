@@ -11,60 +11,19 @@
 <meta name="viewport" content="width = device-width, initial-scale = 1">
 	<title>Dashboard</title>
 
-    <link rel="shortcut icon" type="image/png" href="mylogo.png"/>
+    <link rel="shortcut icon" type="image/png" href="https://drive.google.com/file/d/0B5-CQuN8g8r_UjY3dkxYVERNYXc/view?usp=sharing">
     <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+<link href="css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+
+
 	
 
 <style type="text/css">
-/* Fixed navbar */
-/*body {
-    padding-top: 90px;
-}
-/* General sizing */
-/*ul.dropdown-lr {
-  width: 300px;
-}
 
-/* mobile fix */
-/*@media (max-width: 768px) {
-	.dropdown-lr h3 {
-		color: #eee;
-	}
-	.dropdown-lr label {
-		color: #eee;
-	}
-}
-
-
-
-p{
-font-family: 'Indie Flower', cursive;
-font-size: 30px;
-font-weight: 800;
-margin:1.66%;
-text-transform: uppercase;
-border-bottom: solid 4px red;
-padding-bottom: 8px;
-
-}
-a.navbar-brand
-{
-	font-family: 'Indie Flower', cursive;
-	font-size: x-large;
-	font-weight: 600;
-
-}*/
-
-img{
-
-	width: 30%;
-float: left;
-margin:1.66%;
-
-}
 
 #main{
 margin-top: 8%;
@@ -72,7 +31,16 @@ margin-top: 8%;
 
 #squareBox{
 	border: 1.5px solid black;
+	padding-left: 2%;
+	padding-bottom: 1%;
 }
+
+.row{
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+
 </style>
 
 
@@ -155,12 +123,12 @@ margin-top: 8%;
 		</div>
 	</nav>
     
-<div class="container bg-danger" id="main">
+<div class="container" id="main">
     <div class="row">
-        <div class="col-lg-4 col-md-6 img-responsive"> 
-        <img src="https://s-media-cache-ak0.pinimg.com/736x/47/e4/b8/47e4b823589a2940af578dc27b6a0ce1.jpg">
+        <div class="col-lg-4 col-md-6 col-sm-6 "> 
+        <img class= "img-responsive img-rounded" src="https://s-media-cache-ak0.pinimg.com/736x/47/e4/b8/47e4b823589a2940af578dc27b6a0ce1.jpg">
          </div>
-         <div class="col-lg-8 col-md-6">
+         <div class="col-lg-8 col-md-6 ">
 	          <div id="squareBox">
 	          	<div class="row">
 	          	    <div class="col-lg-2 col-md-6">
@@ -200,45 +168,96 @@ margin-top: 8%;
     </div>
      <div class="row text-center">
       	<div class="col-lg-12">	
-          <h3>How is <b>VentureX</b> <a href="#"><span class="glyphicon glyphicon-pencil"></span></a> doing today? <a href="#">Check Dashboard</a></h3>
+          <h3>How is <b>VentureX</b> <a href="#"><span class="glyphicon glyphicon-pencil"></span></a> doing today? <a href="#"> <h5>Check Dashboard</h5>  
+            </a></h3>
       	</div>	
 	  </div>
 	   <div class="row text-center">
-      	<div class="col-lg-12">	
-          
+      	<div class="col-lg-3">	
+          <div id="test-circle1" class="circle" data-dimension="250" data-text="Product" data-info="Terrible" data-width="30" data-fontsize="38" data-percent="27" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#ddd" data-total="100" data-part="30"></div>
       	</div>	
-	  </div>
+      	<div class="col-lg-3">	
+          <div id="test-circle2" class="circle" data-dimension="250" data-text="Product" data-info="Terrible" data-width="30" data-fontsize="38" data-percent="30" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#ddd" data-total="100" data-part="30"></div>
+      	</div>	
+      	<div class="col-lg-3">	
+          <div id="test-circle3" data-text="Conversion" data-percent="24"></div>
+      	</div>	
+      	<div class="col-lg-3">	
+          <div id="test-circle4" data-text="Engagement" data-percent="100"></div>
+      	</div>	
+	 </div>
+    <div class="row">
+      	<div class="col-lg-12 bg-success" style="border-radius:10px;">	
+           <p><b>Small conversation</b> Learn what you can do to <b>rise your conversion</b></p>
+      	</div>
+     </div>
+
+     <div class="row">
+      	<div class="col-lg-12 bg-danger" style="border-radius:10px;">	
+           <p><b>Low product score?</b> <b>Try this</b> to get more</p>
+      	</div>
+     </div>
 </div>
 
 
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.circliful.min.js"></script>
 
 
-
-
-<script
+<!-- <script
 			  src="https://code.jquery.com/jquery-3.1.1.js"
 			  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
 			  crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
-<script type="text/javascript">
+<script>
 
-$(document).ready(function(){
+    $( document ).ready(function() {
+
+  $("#test-circle1").circliful({
+            
+            foregroundBorderWidth: 8,
+            backgroundBorderWidth: 8,
+            textSize: 28,
+            
+            foregroundColor:'#F9A238',
+            
+        });
 
 
 
-$("img").on("click",function(){
-	$(this).fadeOut(450, function(){
-		$(this).remove();
+    $("#test-circle2").circliful({
 
-	});
-})
+             foregroundBorderWidth: 8,
+            backgroundBorderWidth: 8,
+            percent: 27
+
+    }
+
+      );
+
+      $("#test-circle3").circliful({
+            
+            foregroundBorderWidth: 8,
+            backgroundBorderWidth: 8,
+            
+            textSize: 28,
+            
+            foregroundColor:'#F9A238',
+            
+        });
 
 
-
-});
-	
-
+        $("#test-circle4").circliful({
+           
+            foregroundBorderWidth: 8,
+            backgroundBorderWidth: 8,
+            textSize: 28,
+          
+            foregroundColor:'#6CFF0F',
+            
+        });
+   });
 
 </script>
 
