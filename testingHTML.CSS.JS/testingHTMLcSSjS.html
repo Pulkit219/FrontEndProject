@@ -146,6 +146,16 @@ Nunc facilisis est sed accumsan condimentum. Nam eu turpis arcu. Sed vitae odio 
 <div id="1" style="background-color: #bce8f1; padding: 10px">div 1</div>
 <div id="2" style="background-color: #bce8f1; padding: 10px">div 2</div>
 
+
+
+
+<form id="form1" runat="server">
+    <div>
+        <div id="result"></div>
+    </div>
+</form>
+<input type="button"  value="click" name="" onclick="handleClick()">
+
 <script type="text/javascript">
 	
 	var x =1;
@@ -208,8 +218,24 @@ if(person === personClone)
 if(person.fn === personClone.fn)
 	{console.log('cool3');}
 
-if(person.db.toDateString() === personClone.db.toDateString())
-	{console.log("cool4");}
+
+
+var fun =  function setup()
+    {alert("clicked");};
+
+    var x = 2;
+    var y =4;
+
+    if((y >x || y++ ===4 ) &&  ++y ===5)
+    {
+    	x =1;
+    }
+    else
+    {
+    	x =4;
+    }
+    console.log(x +" " + y);
+
 </script>
 </body>
 </html>
