@@ -3,71 +3,38 @@
 <head>
 	<title>Testing</title>
 	<style type="text/css">
-		p{
-
-			font-size: 1pt, 1em 1px, 100%;
-		}
-
-		a:hover span{
-			color: orange;
-		}
-		/*a:hover > .target{
-			background-color: yellow;
-		}*/
-
-		.first{
-			margin: 10px 0px
-		}
-		.second
-		{
-			margin: 20px 0px;
-			border: 10px solid red;
-			padding: 10px 0px;
-		}
-
-		.text{color: red;}
-		div{color: blue;}
-		.p{color: yellow;}
-		.h1 + div {color:green;}
 
 
-		/*div{
-			opacity: 50%;
-			background: black;
-		}*/
+        .class1 + .class2{font-family: Arial;}
+        .class2 { font-family: Tahoma; }
+        .class3 > .class2 {font-family: Georgia;}
+        .class4 .class2 {font-family: Helvetica;}
 
-		div{
-			background: rgb(0,0,0,0.5);
-
-		}
-		/*div{
-			background: black 50%;
-		}*/
-
-        body{font-size: 24pt;}
-            p{font-size: 50%;}
-        span{font-size: 1.5em;}
-
-
-        div{white-space: nowrap;}
-
-    
-        div#in{
-        	width: 100px;
-        	border: 5px solid black;
-        	padding: 10px;
-
-        }
-        div#out{float: left;}
-
+.class{color: red;}
+p{color: blue;}
      
+     li{
+     	height: 12px;
+     }
+     .left{
+     	float: left;
+     }
+
+     table tr:first-child{color: red;}
+      
+     header h1{color:red;}
+
+     .el3{font-family: Arial, sans-serif;}
+     .el1, .el3 {font-family: Tahoma, sans-serif;}
+     .el1, .el2, .el3 {font: Helvetica;}
+
 	</style>
 </head>
 <body>
 
 <a href="#" target="_blank"><span class="target">hello</span></a>
 
-<p> Lorem <br /> ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper elit massa, et pulvinar urna euismod placerat. Donec sed interdum augue. Sed quis fermentum odio. Morbi vitae sollicitudin sapien. Fusce vel congue nunc. Proin eget elit quis orci venenatis iaculis blandit ac ante. Nullam id nisl sit amet massa dapibus mollis eget eu odio. Donec vehicula erat tortor, sit amet semper justo lobortis sed. Duis sed nisl ut erat facilisis interdum.
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper elit massa, et pulvinar urna euismod placerat. Donec sed interdum augue. Sed quis fermentum odio. Morbi vitae sollicitudin sapien. Fusce vel congue nunc. Proin eget elit quis orci venenatis iaculis blandit ac ante. Nullam id nisl sit amet massa dapibus mollis eget eu odio. Donec vehicula erat tortor, sit amet semper justo lobortis sed. Duis sed nisl ut erat facilisis interdum.
 
 Nunc id diam eleifend, tincidunt quam non, accumsan nulla. Phasellus vitae velit a felis dictum finibus sit amet ac nibh. Donec mollis dolor vel tincidunt consequat. Etiam eu nisi vitae purus efficitur molestie. Ut semper eget ligula a mattis. Suspendisse vulputate augue sit amet leo semper mattis. Donec lacinia gravida laoreet. Fusce lorem nisi, ultricies rutrum porta id, rhoncus in quam. Vestibulum laoreet faucibus odio, sit amet sagittis sem fermentum nec. Proin mattis ornare pellentesque. Praesent elementum est in pellentesque maximus.
 
@@ -111,7 +78,52 @@ Nunc facilisis est sed accumsan condimentum. Nam eu turpis arcu. Sed vitae odio 
 </div>
 
 
+<div>
+	<div>text1</div>
+	<div>text2</div>
+</div>
 
+<div style="height: 10px" id="uni" class="uniq">Text1</div>
+
+<span class="class1">
+	<span class="class4">
+		<span class="class3">
+			<span class="class2">text classes</span>
+		</span>
+	</span>
+</span>
+
+
+<p class="class">class vs P</p>
+
+<ul>
+	<li>hi</li>
+	<li>hello</li>
+</ul>
+
+<div class="wrapper">
+	<div class="right">Text1</div>
+	<div class="left">text2</div>
+</div>
+
+<br>
+<table>
+	<tr><td>table row1</td></tr>
+	<tr><td>table row 2</td></tr>
+</table>
+
+<header><h1>Header text</h1></header>
+<article><h1>Article text</h1></article>
+
+
+<div class="el3">text</div>
+
+
+<h1>
+	<p>
+		<span class="text">Text 1234</span>
+	</p>
+</h1>
 
 </body>
 </html>
