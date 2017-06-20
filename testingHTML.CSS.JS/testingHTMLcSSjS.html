@@ -205,7 +205,7 @@ let person  = function(fn, ln, dob, msm)
 }
 person = new person ('jim', 'prince', new Date(2013,2,12), {weight:'70kg'});
 personClone= JSON.parse(JSON.stringify(person));
-console.log(person);
+console.log(person.ln);
 console.log(personClone);
 
 if(person.msm['weight'] === personClone.msm['weight'])
@@ -235,6 +235,38 @@ var fun =  function setup()
     	x =4;
     }
     console.log(x +" " + y);
+
+
+
+
+    function f(x)
+    {
+    	x++; 
+    }
+    function g(x)
+    {
+    	x.value*=5;
+    }
+    var a ;
+    var b=1;
+    var c= {value: 2};
+    var d=c;
+
+    f(a);
+    f(b);
+    g(d);
+
+console.log(a, b, c.value , d.value);
+
+
+var a =['apple', 'banana', 'coconut']
+var b = a
+var c = a.slice()
+
+a.push('date')
+
+console.log(b);
+console.log(c);
 
 </script>
 </body>
