@@ -133,8 +133,18 @@ Nunc facilisis est sed accumsan condimentum. Nam eu turpis arcu. Sed vitae odio 
 	</p>
 </h1>
 
+<div id="1" style="background-color: #bce8f1; padding: 10px">
+     div1
+	<div id="2" style="background-color: #d9edf7; padding: 10px">
+	   div2
+		<div id="3" style="background-color: #bce8f1; padding: 10px">
+			div3
+		</div>
+	</div>
+</div>
 
-
+<div id="1" style="background-color: #bce8f1; padding: 10px">div 1</div>
+<div id="2" style="background-color: #bce8f1; padding: 10px">div 2</div>
 
 <script type="text/javascript">
 	
@@ -156,6 +166,21 @@ Nunc facilisis est sed accumsan condimentum. Nam eu turpis arcu. Sed vitae odio 
 
 	bar();
 	console.log(x);
+
+
+var divs = document.getElementsByTagName('div');
+
+for (var i =0; i < divs.length; i++) {
+	
+	divs[i].addEventListener("click", logEvent, false);
+}
+
+function logEvent()
+{
+	console.log(this.id);
+}
+
+
 </script>
 </body>
 </html>
