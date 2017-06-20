@@ -181,6 +181,35 @@ function logEvent()
 }
 
 
+
+
+
+let person  = function(fn, ln, dob, msm)
+
+{
+
+	this.fn = fn;
+	this.ln = ln;
+	this.dob =dob;
+	this.msm =msm;
+}
+person = new person ('jim', 'prince', new Date(2013,2,12), {weight:'70kg'});
+personClone= JSON.parse(JSON.stringify(person));
+console.log(person);
+console.log(personClone);
+
+if(person.msm['weight'] === personClone.msm['weight'])
+{console.log("cool")}
+
+if(person === personClone)
+{{console.log("cool2")}
+}
+
+if(person.fn === personClone.fn)
+	{console.log('cool3');}
+
+if(person.db.toDateString() === personClone.db.toDateString())
+	{console.log("cool4");}
 </script>
 </body>
 </html>
