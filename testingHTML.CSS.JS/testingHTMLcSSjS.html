@@ -29,11 +29,26 @@ p{color: blue;}
      .el1, .el2, .el3 {font: Helvetica;}
 
 */
-.text{color: red;}
+/*.text{color: red;}
 span{color: blue;}
 h1{color: green;}
 h1 span {color: black;}
-p span {color: yellow;}
+p span {color: yellow;}*/
+
+/*
+        body{font-size: 24pt;}
+            p{font-size: 50%;}
+        span{font-size: 1.5em;}
+
+
+
+*/
+
+
+		.text{color: red;}
+		div{color: blue;}
+		.p{color: yellow;}
+		.h1 + div {color:green;}
 
 
 	</style>
@@ -129,7 +144,7 @@ Nunc facilisis est sed accumsan condimentum. Nam eu turpis arcu. Sed vitae odio 
 
 <h1>
 	<p>
-		<span class="text">Text 1234</span>
+		<div><span>Which color will be applied</span></div>
 	</p>
 </h1>
 
@@ -158,24 +173,24 @@ Nunc facilisis est sed accumsan condimentum. Nam eu turpis arcu. Sed vitae odio 
 
 <script type="text/javascript">
 	
-// 	var x =1;
-// 	if(true)
-// 		{var x =2;}
-// 	console.log(x);
+	var x =1;
+	if(true)
+		{var x =2;}
+	console.log(x);
 
-// 	function foo()
-// 	{var x = 3 ;}
+	function foo()
+	{var x = 3 ;}
 
-// 	foo();
-// 	console.log(x);
+	foo();
+	console.log(x);
 
-// 	function bar ()
-// 	{
-// 		x =4;
-// 	}
+	function bar ()
+	{
+		 x =4;
+	}
 
-// 	bar();
-// 	console.log(x);
+	bar();
+	console.log(x);
 
 
 // var divs = document.getElementsByTagName('div');
@@ -300,6 +315,41 @@ var fun =  function setup()
 
 
 
+var counter = (function()
+
+{
+
+	var  myCounter =0;
+
+	function changeBy(val){
+	myCounter+=val;
+}
+
+return {
+	increment:function()
+	{
+		changeBy(1);
+
+	},
+	decrement: function()
+	{
+		changeBy(-1);
+	},
+	value: function()
+	{
+		return myCounter;
+	}
+};
+
+}) ();
+console.log(counter.value());
+counter.increment();
+counter.increment();
+console.log(counter.value());
+counter.decrement();
+console.log(counter.value());
+counter.changeBy(2);
+console.log(counter.value);
 
 
 
