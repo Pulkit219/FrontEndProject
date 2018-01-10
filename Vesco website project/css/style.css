@@ -1,0 +1,23 @@
+/*=========================
+
+font-family: 'Roboto Condensed', sans-serif;
+
+Greenish Blue : #34c6d3 (Buttons, Icons, Links, Lines & Backgrounds)
+Steel Gray    : #41464b  (headings)
+Blue Bayoux   : #64707b (Paragraphs)
+White         : #fff
+BLack         : #000
+=======================*/
+
+
+/*=========================
+
+IMPORTANT THINGS/SOURCES USED IN THIS PROJECT
+
+FONTPAIR=> TO FIND A FONT FONTPAIR
+FONT PLAYGROUND CHROME PLUGIN=> TO SEE LIVE PREVIEW FOR OTHER FONTS APPLIED
+COLOR THEME COMBINATION SCHMEME FOR WEBSITE=>
+=======================*/
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
