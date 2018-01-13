@@ -18,6 +18,20 @@ FONTPAIR=> TO FIND A FONT FONTPAIR
 FONT PLAYGROUND CHROME PLUGIN=> TO SEE LIVE PREVIEW FOR OTHER FONTS APPLIED
 COLOR THEME COMBINATION SCHMEME FOR WEBSITE=>
 =======================*/
+html,body{
+  height: 100%;
+}
 body{
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+#home{
+  height: 100%;
+}
+#home-cover{
+  height: 100%;
+  background-image: url("../img/bg-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
