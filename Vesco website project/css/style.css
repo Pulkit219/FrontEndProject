@@ -27,7 +27,13 @@ body {
 }
 
 h3 {
+    color:#41464b; 
   text-transform: uppercase;
+}
+p{
+    color: #64707b;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 #home {
@@ -132,4 +138,39 @@ CONTENT BOX
   background-color: #34c6d3;
   margin:0 auto;
   margin-bottom: 30px;
+}
+/*=========================
+SERVICES
+=======================*/
+.service-item{
+  padding:20px 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.service-item-icon{
+  color: #34c6d3;
+  float: left;
+  padding:15px;
+  margin-right: 25px;
+  width: 75px;
+  height:75px;
+  text-align: center;
+
+}
+
+.service-item:hover div.service-item-icon {
+  color: #fff;
+  background-color: #34c6d3;
+}
+
+.service-item-title h3{
+  font-size: 20px;
+  font-weight: 400;
+   margin:0 0 10px 0;
+
+}
+.service-item-desc p{
+  margin:0;
+  padding-left: 85px;
 }
