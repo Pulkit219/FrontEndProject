@@ -87,6 +87,7 @@ BUTTONS(Generic)
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
+    transition: color 0.5s;
 }
 
 .btn-white {
@@ -99,6 +100,16 @@ BUTTONS(Generic)
   color: #41464b;
 }
 
+
+.btn-blue {
+  border-color: #34c6d3;
+  color: #34c6d3;
+}
+
+.btn-blue:hover, btn-blue:focus {
+  background-color: #34c6d3;
+  color: #fff;
+}
 /*=========================
 ANIMATE
 =======================*/
