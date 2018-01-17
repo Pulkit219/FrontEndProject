@@ -16,6 +16,8 @@ IMPORTANT THINGS/SOURCES USED IN THIS PROJECT
 FONTPAIR=> TO FIND A FONT FONTPAIR
 FONT PLAYGROUND CHROME PLUGIN=> TO SEE LIVE PREVIEW FOR OTHER FONTS APPLIED
 COLOR THEME COMBINATION SCHMEME FOR WEBSITE=>
+
+Brackets plugins installed=>bracket snippets
 =======================*/
 
 html, body {
@@ -87,7 +89,7 @@ BUTTONS(Generic)
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-    transition: color 0.5s;
+  transition: color 0.10s;
 }
 
 .btn-white {
