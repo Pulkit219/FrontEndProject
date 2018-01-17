@@ -189,6 +189,15 @@ SERVICES
 /*=========================
 ABOUT
 =======================*/
+
+#about-bg-diagonal{
+    height: 700px;
+    width: 60%;
+    float: right;
+    background-image: url(../img/bg-about.jpg);
+    border-top: 700px solid transparent;
+    border-left: 200px solid #fff;
+}
 #about-content-box{
     float: left;
     height: 700px;
