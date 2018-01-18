@@ -18,6 +18,10 @@ FONT PLAYGROUND CHROME PLUGIN=> TO SEE LIVE PREVIEW FOR OTHER FONTS APPLIED
 COLOR THEME COMBINATION SCHMEME FOR WEBSITE=>
 
 Brackets plugins installed=>bracket snippets
+WOW animation is used for animation on scroll
+Magnific plugin for browsing galleries 
+Owl Carousel
+
 =======================*/
 
 html, body {
@@ -240,9 +244,11 @@ WORK
 .img-wrapper{
     overflow: hidden;
 }
-.img-wrapper img:hover{
-    transform: scale(1.5);
-}
+
 .img-wrapper img{
     transition: transform .3s ease;
+}
+.img-wrapper img:hover{
+    transform: scale(1.5);
+    cursor: zoom-in;
 }
