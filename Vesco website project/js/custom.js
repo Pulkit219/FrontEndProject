@@ -30,11 +30,28 @@ TEAM
 $(function () {
 
     $(".owl-carousel").owlCarousel({
-        items:3,
-        autoplay:true,
-        loop:true
-    }
-      
+            items: 3,
+            autoplay: true,
+            loop: true,
+            autoplayHoverPause: true
+        }
+
+    );
+
+});
+
+/*=========================
+TESTOMONIAL
+=======================*/
+$(function () {
+
+    $("#customer-testimonials").owlCarousel({
+            items: 1,
+            autoplay: true,
+            loop: true,
+            autoplayHoverPause: true
+        }
+
     );
 
 });
