@@ -55,3 +55,30 @@ $(function () {
     );
 
 });
+
+/*=========================
+COUNTER
+=======================*/
+$(function(){
+    $('.counter').counterUp({
+    delay:10,
+    time:3000
+});
+})
+
+/*=========================
+CLIENTS
+=======================*/
+$(function () {
+
+    $("#clients-list").owlCarousel({
+            items: 6,
+            autoplay: true,
+            smartSpeed:700,
+            loop: true,
+            autoplayHoverPause: true
+        }
+
+    );
+
+});
