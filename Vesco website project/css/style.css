@@ -486,3 +486,24 @@ CLIENTS
 .client{
     padding:40px 0;
 }
+
+
+/*=========================
+CONTACT
+=======================*/
+footer{
+    background-color: #41464b;
+    padding-top: 30px;
+    border-top: 5px solid rgba(0,0,0,0.1);
+}
+
+#contact-left h3{
+    color: #fff;
+    font-weight: 700;
+    font-size: 27px;
+}
+
+#contact-left p{
+    color: #fff;
+    margin-bottom: 30px;
+}
