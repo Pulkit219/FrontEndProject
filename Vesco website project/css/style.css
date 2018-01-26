@@ -121,6 +121,17 @@ btn-blue:focus {
     color: #fff;
 }
 
+.btn-back-to-top{
+    position: fixed;
+    bottom: 22px;
+    right:4.5px;
+    font-size:22px;
+    padding:5px 15px;
+    border-radius: 0;
+    display: none;
+    
+}
+
 /*=========================
 ANIMATE
 =======================*/
