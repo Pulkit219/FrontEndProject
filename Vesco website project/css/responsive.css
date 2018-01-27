@@ -1,0 +1,43 @@
+/*=========================
+MEDIA QUERIES
+=======================*/
+
+/* Large devices*/
+
+@media (min-width:1200px)
+{
+    #home-heading h3{
+        color:blue;
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1199px)
+{
+    #home-heading h3{
+        color:red;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:991px)
+{
+    #home-heading h3{
+        color:yellow;
+    }
+}
+
+@media (max-width:767px)
+{
+    #home-heading h3{
+        color:green;
+    }
+}
+
+
+@media (max-width:320px)
+{
+    #home-heading h3{
+        color:purple;
+    }
+}
