@@ -630,7 +630,7 @@ NAVIGATION
     max-height:none !important;
 }
 .vesco-top-nav ul.navbar-nav > li.active > a{
-    color: #fff;
-    background-color: #34c6d3;
+    color: #34c6d3;
+/*    background-color: #34c6d3;*/
     
 }

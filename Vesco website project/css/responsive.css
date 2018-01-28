@@ -14,8 +14,15 @@ MEDIA QUERIES
 
 @media (min-width:992px) and (max-width:1199px)
 {
-    #home-heading h3{
-        color:red;
+    .navbar{
+        background: rgba(0,0,0,0.7);
+        padding: 0px;
+    }
+    .navbar-nav{
+        float: left;
+    }
+    .vesco-nav-wrapper{
+        padding: 0;
     }
 }
 
