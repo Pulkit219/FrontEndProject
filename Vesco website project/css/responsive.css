@@ -51,6 +51,14 @@ MEDIA QUERIES
         width: 100%;
         height: 350px;
     }
+    /*Stats*/
+    .stats-item{
+        padding:20px 0;
+    }
+    /*footer copyrights*/
+    #footer-copyrights{
+        text-align: center;
+    }
 }
 
 @media (max-width:767px)
