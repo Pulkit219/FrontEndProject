@@ -95,6 +95,26 @@ MEDIA QUERIES
     .img-wrapper img{
         min-width: 100%;
     }
+    /*testimonials*/
+    .testimonial blockquote{
+        padding:6px 50px;
+    }
+    .testimonial blockquote:before{
+        left:10px;
+    }
+    .testimonial blockquote:after{
+        right:10px;
+    }
+    .testimonial blockquote{
+        font-size: 16px;
+    }
+      /*Stats*/
+    .stats-item{
+        padding:20px 0;
+    }
+    #footer-copyrights{
+        text-align: center;
+    }
 }
 
 @media (max-width:480px)
