@@ -24,11 +24,13 @@ Owl Carousel
 
 TINYPNG.com was USED to optimize teh image sizes
 
+CODE validation with https://validator.w3.org
+
 =======================*/
 
 html,
-body {
-    height: 100%;
+body{
+    height:100%;
 }
 
 body {
@@ -141,21 +143,24 @@ ANIMATE
 #home-cover,
 #home-heading,
 #home-btn {
-    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
 }
 
 #home-cover {
-    animation-delay: .1s;
+    -webkit-animation-delay: .1s;
+            animation-delay: .1s;
 }
 
 #home-heading {
-    animation-delay: .5s;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
 }
 
 #home-btn {
-    animation-delay: .5s;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
 }
-
 /*=========================
 CONTENT BOX
 =======================*/
@@ -278,14 +283,20 @@ WORK
 }
 
 .img-wrapper img {
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    -o-transition: transform .3s ease;
     transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
 }
 
 .img-wrapper img:hover {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+    cursor: -webkit-zoom-in;
     cursor: zoom-in;
 }
-
 /*=========================
 TEAM
 =======================*/
@@ -595,6 +606,7 @@ NAVIGATION
 =======================*/
 .navbar{
     padding: 20px 0;
+    -webkit-transition: all .5s ease-in-out;-o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
 .vesco-top-nav{
