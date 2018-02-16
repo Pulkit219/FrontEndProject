@@ -1,3 +1,18 @@
+
+/*IMPORTANT THINGS*
+
+Use rem instead of em
+rem works in relation with default HTML font size
+em works in relation with their parent element as well as default HTML font size, hence makes it complicated
+
+
+/
+
+
+
+
+
+
 /*
 COLORS:
 
@@ -39,18 +54,18 @@ body{
     clip-path:polygon(0 0, 100% 0,100% 75vh,0 100%)
 }
 
-.logo-box{
+.header__logo-box{
     position: absolute;
     top: 4rem;
     left: 4rem;
     
 }
 
-.logo{
+.header__logo{
     height: 35px;
 }
 
-.text-box{
+.header__text-box{
     position: absolute;
     top:40%;
     left: 50%;
@@ -65,7 +80,7 @@ body{
     margin-bottom: 6rem;
 }
 
-.heading-primary-main{
+.heading-primary--main{
     display: block;
     font-size: 6rem;
     font-weight: 400;
@@ -79,7 +94,7 @@ body{
 /*    animation-delay:3s; animation starts after 3s after page reloads*/
 }
 
-.heading-primary-sub{
+.heading-primary--sub{
     
     display: block;
     font-weight: 700;
@@ -161,7 +176,7 @@ body{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
 }
 
-.btn-white{
+.btn--white{
     background-color: #fff;
     color: #777;
 }
@@ -179,7 +194,7 @@ body{
     z-index: -1;
     transition: all .4s;
 }
-.btn-white::after{
+.btn--white::after{
     background-color: #fff;
 }
 
@@ -188,7 +203,7 @@ body{
     opacity: 0;
 }
 
-.btn-animated{
+.btn--animated{
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
 }
