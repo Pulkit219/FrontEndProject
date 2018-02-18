@@ -5,6 +5,10 @@ Use rem instead of em
 rem works in relation with default HTML font size
 em works in relation with their parent element as well as default HTML font size, hence makes it complicated
 
+darken background color on :hover
+background-color:darken($your_color_name,15%);
+background-color:lighten($your_color_name,15%);
+
 
 /
 
