@@ -10,6 +10,24 @@ background-color:darken($your_color_name,15%);
 background-color:lighten($your_color_name,15%);
 
 
+SAVE A BLOCK OF CODE IN A VARIABLE
+
+@mixin clearfix{
+&::after{
+content:"";
+clear:both;
+display:table;
+}
+
+}
+@include mixin;
+
+
+
+
+
+
+
 /
 
 
