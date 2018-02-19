@@ -48,6 +48,10 @@ $color-primary:#55c57a;
 $color-primary-light:#7ed56f;
 $color-primary-dark:#28b485;
 
+$color-grey-dark:#777;
+$color-white:#fff;
+$color-black:#000;
+
 *,
 *::after,
 *::before{
@@ -77,63 +81,72 @@ body{
     background-position: top;
     position: relative;
     
-    clip-path:polygon(0 0, 100% 0,100% 75vh,0 100%)
-}
-
-.header__logo-box{
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
+    clip-path:polygon(0 0, 100% 0,100% 75vh,0 100%);
     
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+
+    }
+
+    &__logo {
+        height: 35px;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+        
+        
+        
 }
 
-.header__logo{
-    height: 35px;
-}
 
-.header__text-box{
-    position: absolute;
-    top:40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-}
+
 
 .heading-primary{
     color: #fff;
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 6rem;
-}
+    
+    
+         &--main {
+             display: block;
+             font-size: 6rem;
+             font-weight: 400;
+             letter-spacing: 3.5rem;
+             animation-name: moveInLeft;
+             animation-duration: 1s;
+             animation-timing-function: ease-out;
 
-.heading-primary--main{
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function:ease-out; 
-    
-    
-/*    animation-iteration-count: infinite*/
-/*    animation-delay:3s; animation starts after 3s after page reloads*/
-}
 
-.heading-primary--sub{
-    
-    display: block;
-    font-weight: 700;
-    font-size: 2rem;
-    letter-spacing: 1.75rem;
-    margin-bottom: 60px;
-/*
+             /*    animation-iteration-count: infinite*/
+             /*    animation-delay:3s; animation starts after 3s after page reloads*/
+         }
+
+         &--sub {
+
+             display: block;
+             font-weight: 700;
+             font-size: 2rem;
+             letter-spacing: 1.75rem;
+             margin-bottom: 60px;
+             /*
     animation-name: moveInRight;
     animation-duration: 1s;
     animation-timing-function:ease-out; 
 */
-    animation: moveInRight 1s ease-out;
+             animation: moveInRight 1s ease-out;
+         }
 }
+
+
 
 @keyframes moveInLeft{
     0%{
@@ -180,58 +193,67 @@ body{
 }
 
 
-.btn:link,
-.btn:visited{
-    text-transform: uppercase;
-    text-decoration: none;
-    padding:1.5rem 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    transition: all .2s;
-    position: relative;
-    font-size: 1.6rem;
+.btn{
+    
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: 1.6rem;
+
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
+    }
+
+    &--white {
+        background-color: #fff;
+        color: #777;
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        border-radius: 100px;
+        width: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+
+    &--white::after {
+        background-color: #fff;
+    }
+
+    &:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
     
 }
 
-.btn:hover{
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
-}
-.btn:active{
-    transform: translateY(-1px);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
-}
 
-.btn--white{
-    background-color: #fff;
-    color: #777;
-}
 
-.btn::after{
-    content: "";
-    display: inline-block;
-    height: 100%;
-    border-radius: 100px;
-    width: 100%;
-    
-    position: absolute;
-    top:0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-}
-.btn--white::after{
-    background-color: #fff;
-}
-
-.btn:hover::after{
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-
-.btn--animated{
-    animation: moveInBottom .5s ease-out .75s;
-    animation-fill-mode: backwards;
-}
 
 
